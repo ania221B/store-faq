@@ -7,6 +7,21 @@ body {
   font-family: $ff-primary;
   font-weight: $fw-400;
   font-size: fs(400);
-  background-color: clr(neutral, 800);
-  color: clr(neutral, 100);
+  background-color: clr(primary, 1000);
+  color: clr(primary, 100);
+  position: relative;
+}
+
+body::after,
+body::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 10%;
+  z-index: -1;
+}
+
+body::after {
+  background: clr(primary, 1000);
+  filter: url(#grain);
 }
