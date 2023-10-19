@@ -1,0 +1,20 @@
+@use '../abstracts/' as *;
+
+.circle {
+  position: absolute;
+  width: 20rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: rgba(clr(secondary, 400), 0.8);
+  filter: blur(9rem);
+  z-index: -1;
+}
+
+.circle-top {
+  top: 0;
+  left: 0;
+}
+.circle-bottom {
+  bottom: 0;
+  right: 0;
+}
