@@ -22,7 +22,7 @@ function AccordionPanel ({ id, title, text }) {
           aria-controls={`accordion__content-${id}`}
           aria-expanded={isOpen}
         >
-          <span>{title}</span>
+          <span className='fs-600'>{title}</span>
           <FaAnglesDown className='accordion__toggle'></FaAnglesDown>
         </button>
       </h2>
