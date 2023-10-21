@@ -10,6 +10,15 @@
   z-index: -1;
 }
 
+.circle::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  aspect-ratio: 1;
+  border-radius: inherit;
+  background-color: clr(accent, 400);
+}
+
 .circle-top {
   top: 0;
   left: 0;
@@ -17,4 +26,12 @@
 .circle-bottom {
   bottom: 0;
   right: 0;
+}
+
+.circle-top::after {
+  inset: 125% auto auto 0;
+}
+
+.circle-bottom::after {
+  inset: auto 0 125% auto;
 }
