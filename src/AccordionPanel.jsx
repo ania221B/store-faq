@@ -16,7 +16,7 @@ function AccordionPanel ({ id, title, text }) {
       <h2 className='accordion__title'>
         <button
           type='button'
-          className='button'
+          className='button accordion__button'
           onClick={togglePanel}
           aria-label='show or hide answer'
           aria-controls={`accordion__content-${id}`}
