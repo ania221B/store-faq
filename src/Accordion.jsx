@@ -4,12 +4,14 @@ function Accordion ({ questions }) {
   return (
     <section className='section'>
       <div className='container' data-container='small'>
-        <h1 className='fs-900 text-center'>Frequently asked questions</h1>
-        {questions.map(question => {
-          return (
-            <AccordionPanel {...question} key={question.id}></AccordionPanel>
-          )
-        })}
+        <h1 className='fs-800 text-center'>Questions customers often have</h1>
+        <div className='accordion-container margin-xl'>
+          {questions.map(question => {
+            return (
+              <AccordionPanel {...question} key={question.id}></AccordionPanel>
+            )
+          })}
+        </div>
       </div>
     </section>
   )
