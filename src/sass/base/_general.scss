@@ -1,6 +1,12 @@
 @use '../abstracts/' as *;
 
+::selection {
+  background-color: clr(accent, 400);
+  color: clr(primary, 300);
+}
+
 body {
+  margin: 0;
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
@@ -9,6 +15,8 @@ body {
   font-size: fs(500);
   background-color: clr(primary, 1000);
   color: clr(primary, 100);
+  display: grid;
+  align-items: center;
   position: relative;
 }
 
