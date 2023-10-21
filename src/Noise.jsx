@@ -1,6 +1,6 @@
 function Noise () {
   return (
-    <svg>
+    <svg className='grain-image'>
       <filter id='grain'>
         <feTurbulence
           type='fractalNoise'
